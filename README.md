@@ -92,6 +92,5 @@ pytest
 - Python 3.8+
 - Google Chrome (ou outro navegador com WebDriver instalado)
 - ChromeDriver (compatível com sua versão do navegador)
-- Internet ativa
 
 ---

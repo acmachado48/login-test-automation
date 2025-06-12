@@ -1,10 +1,8 @@
 import pytest
-import time
 from pages.login_page import LoginPage
 
 
-
-VALID_EMAIL = "kai19@gmail.com"
+VALID_EMAIL = "jefefermcshart@gmail.com"
 VALID_PASSWORD = "validAndSecurePassword"
 INVALID_EMAIL = "invalidemail.com"
 INVALID_PASSWORD = "invalidPassword"

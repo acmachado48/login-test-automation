@@ -1,0 +1,13 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.13.3, pytest-8.4.0, pluggy-1.6.0 -- /Users/anacarolinamachado/Selenium_py/.venv/bin/python3.13
+cachedir: .pytest_cache
+metadata: {'Python': '3.13.3', 'Platform': 'macOS-15.1.1-arm64-arm-64bit-Mach-O', 'Packages': {'pytest': '8.4.0', 'pluggy': '1.6.0'}, 'Plugins': {'html': '4.1.1', 'metadata': '3.1.1'}, 'JAVA_HOME': '/Users/anacarolinamachado/.sdkman/candidates/java/current'}
+rootdir: /Users/anacarolinamachado/DTI TESTE/teste_dti
+plugins: html-4.1.1, metadata-3.1.1
+collecting ... collected 3 items
+
+test/test_login.py::TestLogin::test_login_valid_credentials PASSED       [ 33%]
+test/test_login.py::TestLogin::test_login_invalid_email PASSED           [ 66%]
+test/test_login.py::TestLogin::test_login_invalid_password PASSED        [100%]
+
+============================== 3 passed in 26.42s ==============================

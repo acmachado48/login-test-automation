@@ -16,14 +16,17 @@ This project aims to automate login page tests for the website [Automation Pract
 
 ## 📂 Project Structure
 
-├── pages/
-│ └── login_page.py # Page Object Model for the login page
-├── tests/
-│ └── test_login.py # Automated test cases
-├── requirements.txt # Project dependencies
-└── README.md # Instructions and documentation
+```
 
----
+.
+├── pages/
+│   └── login\_page.py      # Page Object Model for the login page
+├── tests/
+│   └── test\_login.py      # Automated test cases
+├── requirements.txt       # Project dependencies
+└── README.md              # Instructions and documentation
+
+```
 
 ## ✅ Automated Test Scenarios
 

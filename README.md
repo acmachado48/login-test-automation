@@ -1,71 +1,71 @@
-# 🔐 Testes Automatizados - Página de Login | Automation Practice
+# 🔐 Automated Login Tests | Automation Practice
 
-Este projeto tem como objetivo a automação de testes da página de login do site [Automation Practice](http://automationpractice.pl/index.php?controller=authentication&back=my-account), utilizando **Selenium WebDriver** e **Pytest**.
-
----
-
-## 🧪 Tecnologias Utilizadas
-
-- **Linguagem:** Python 3
-- **Framework de testes:** Pytest
-- **Automação Web:** Selenium WebDriver
-- **Gerenciador de dependências:** `pip`
-- **IDE:** VSCode
+This project aims to automate login page tests for the website [Automation Practice](http://automationpractice.pl/index.php?controller=authentication&back=my-account), using **Selenium WebDriver** and **Pytest**.
 
 ---
 
-## 📂 Estrutura do Projeto
+## 🧪 Technologies Used
 
-```
+- **Language:** Python 3  
+- **Testing framework:** Pytest  
+- **Web automation:** Selenium WebDriver  
+- **Dependency manager:** `pip`  
+- **IDE:** VSCode  
+
+---
+
+## 📂 Project Structure
+
 .
 ├── pages/
-│   └── login_page.py      # Page Object Model para a página de login
+│ └── login_page.py # Page Object Model for the login page
 ├── tests/
-│   └── test_login.py      # Casos de teste automatizados
-├── requirements.txt        # Dependências do projeto
-└── README.md               # Instruções e documentação
-```
+│ └── test_login.py # Automated test cases
+├── requirements.txt # Project dependencies
+└── README.md # Instructions and documentation
+
 
 ---
 
-## ✅ Casos de Teste Automatizados
+## ✅ Automated Test Scenarios
 
-### 🧪 Cenário 1: Login com credenciais válidas
+### 🧪 Scenario 1: Login with valid credentials
 
-- **Dado que** o usuário esteja na página de login do site Automation Practice
-- **Quando** o usuário preencher o e-mail e senha corretos e clicar em "Sign in"
-- **Então** o sistema deve redirecionar o usuário para sua conta, confirmando o login com sucesso
+- **Given** the user is on the Automation Practice login page  
+- **When** the user enters a valid email and password, then clicks "Sign in"  
+- **Then** the system should redirect the user to their account page, confirming a successful login  
 
-> Resultado esperado: Redirecionamento para a URL contendo `/my-account`
-
----
-
-### 🧪 Cenário 2: Login com e-mail inválido
-
-- **Dado que** o usuário esteja na página de login do site Automation Practice
-- **Quando** o usuário preencher um e-mail mal formatado (ex: `invalidemail.com`) e qualquer senha
-- **Então** o sistema deve exibir a mensagem de erro: **"Invalid email address."**
+> **Expected result:** Redirect to a URL containing `/my-account`
 
 ---
 
-### 🧪 Cenário 3: Login com senha incorreta
+### 🧪 Scenario 2: Login with invalid email format
 
-- **Dado que** o usuário esteja na página de login do site Automation Practice
-- **Quando** o usuário preencher um e-mail válido e uma senha incorreta
-- **Então** o sistema deve exibir a mensagem de erro: **"Authentication failed."**
+- **Given** the user is on the Automation Practice login page  
+- **When** the user enters a poorly formatted email (e.g., `invalidemail.com`) and any password  
+- **Then** the system should display the error message: **"Invalid email address."**
 
 ---
 
-## 🚀 Como Executar os Testes
+### 🧪 Scenario 3: Login with incorrect password
 
-### 1. Clonar o repositório
+- **Given** the user is on the Automation Practice login page  
+- **When** the user enters a valid email and an incorrect password  
+- **Then** the system should display the error message: **"Authentication failed."**
+
+---
+
+## 🚀 How to Run the Tests
+
+### 1. Clone the repository
 
 ```bash
-git clone https://github.com/seuusuario/automated-login-tests.git
+git clone https://github.com/yourusername/automated-login-tests.git
 cd automated-login-tests
 ```
 
-### 2. Criar ambiente virtual (opcional, mas recomendado)
+
+### 2. Create a virtual environment (optional, but recommended)
 
 ```bash
 python -m venv venv
@@ -73,13 +73,13 @@ source venv/bin/activate  # Linux/Mac
 venv\Scripts\activate     # Windows
 ```
 
-### 3. Instalar dependências
+### 3. Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Executar os testes
+### 4. Run the tests
 
 ```bash
 pytest
@@ -87,10 +87,9 @@ pytest
 
 ---
 
-## ⚙️ Requisitos para Execução
+## ⚙️ Requirements
 
-- Python 3.8+
-- Google Chrome (ou outro navegador com WebDriver instalado)
-- ChromeDriver (compatível com sua versão do navegador)
+* Python 3.8+
+* Google Chrome (or another browser with WebDriver installed)
+* ChromeDriver (compatible with your browser version)
 
----
